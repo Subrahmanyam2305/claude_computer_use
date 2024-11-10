@@ -1,4 +1,4 @@
-# claude_computer_use
+# Multistep thinking for Claude Computer Use
 Adding Claude computer use as one of the tools to crewai
 
 ~~ Built with AgentStack ~~
