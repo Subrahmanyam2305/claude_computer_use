@@ -1,0 +1,50 @@
+output_inspect:
+  description: >-
+    This task involves monitoring the output of the computer agent to ensure it is proceeding as expected. 
+    The purpose is to provide feedback or hints if the output deviates from expectations, 
+    helping the agent stay on track. As the agent runs, watch for any potential issues or stalls. 
+    If the agent pauses unexpectedly or its actions seem misaligned with the desired outcome, 
+    give constructive feedback or actionable hints to guide it back in the right direction.
+  expected_output: >-
+    The output should indicate whether the agent's progress is acceptable or not. 
+    If the output is acceptable, note that. If the output is unacceptable, provide feedback 
+    outlining observed issues and specific suggestions to help the agent adjust and continue effectively.
+
+  agent: >-
+    qa_agent
+
+organize_chrome_tabs:
+  description: >-
+    This task involves gathering the URLs of all currently open Chrome tabs on the screen, categorizing them 
+    based on their relevant fields (e.g., AI, ML, NLP), and organizing them in a Markdown (.md) file. 
+    The file should be saved in the /tmp folder with a clear structure where each category lists 
+    relevant URLs underneath it. This organization helps make the information in Chrome tabs 
+    easier to access and use for further processing.
+  expected_output: >-
+    A Markdown (.md) file saved in the /tmp folder. The file should be organized into sections representing 
+    various categories (like AI, ML, NLP, etc.), with each section listing the URLs of the Chrome tabs that 
+    fit the category. The file should follow a logical, easy-to-read format to ensure seamless access 
+    and categorization of information.
+
+  agent: >-
+    computer_agent
+
+create_obsidian_chart:
+  description: >-
+    In this task, import the Markdown (.md) file created in the previous task into Obsidian and set up 
+    backlinks for each listed URL. Each category should be reflected as a node in the knowledge graph, 
+    with links to the URLs grouped under each relevant category. This organization within Obsidian 
+    should enable quick navigation between categories and their URLs, creating a visual representation 
+    of the organized information. The knowledge graph will aid in visualization and cross-referencing 
+    of topics, helping to explore relationships between the categories and URLs.
+  expected_output: >-
+    A fully organized knowledge graph in Obsidian where each category represents a node with backlinks 
+    to the URLs of Chrome tabs, imported from the .md file. This structure enables intuitive exploration 
+    of categories and their respective URLs within the graph view in Obsidian. The expected output is 
+    a clear, functional knowledge graph where the categories connect to their associated URLs, allowing 
+    for efficient information access.
+
+  agent: >-
+    computer_agent
+
+
