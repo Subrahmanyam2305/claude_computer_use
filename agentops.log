@@ -1,0 +1,3 @@
+2024-11-10 10:57:41,573 - INFO - Session Replay: https://app.agentops.ai/drilldown?session_id=ee6fa9b6-bbcd-4cb8-adb9-ac282beea6f4
+2024-11-10 12:34:00,973 - INFO - Session Stats - Duration: 1h 36m 18.0s | Cost: $8.405831 | LLMs: 329 | Tools: 0 | Actions: 0 | Errors: 0
+2024-11-10 12:34:00,977 - INFO - Session Replay: https://app.agentops.ai/drilldown?session_id=ee6fa9b6-bbcd-4cb8-adb9-ac282beea6f4
